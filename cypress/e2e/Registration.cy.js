@@ -35,7 +35,7 @@ describe('Azure Bookcart Registration', () => {
           login.setPassword(data.password);                                               //Set the password from example.json
           login.clickSubmit();                                                            //Click on Submit Button  
 
-          let accountCircleText = data.accCircle + newUsername + data.arrowDd;            //Getting the account circle text
+          let accountCircleText = data.accCircle + newUsername + data.arrowDd;            //Creating the account circle text with new username
           homepage.accountCircle().should('have.text',accountCircleText);                 //Assert the account circle text 
         })
       })
